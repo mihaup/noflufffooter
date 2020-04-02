@@ -1,12 +1,18 @@
 
-* {
-    padding: 5px;
+html,body
+{
+    padding: 0;
+    margin: 0;
 }
 
 
 footer
 {
 
+    position: fixed;
+    bottom: 0;
+    margin:0;
+    padding: 0;
     display: flex;
     width: 100%;
     min-height: 200px;
@@ -14,11 +20,18 @@ footer
     text-align: center;
     color: #fff;
     justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+
+  
 
     h3 {
 
         padding: 30px;
-        margin-right: 50px;
+        padding-top: 5px;
+      
+        transform: scale(1.2);
 
     }
 
@@ -29,6 +42,33 @@ footer
 
     list-style-type: none;
     width: 20%;
+    text-align: left;
+
+   
+    
+
+
+    a 
+    {
+        font-size: 1.5rem;
+        padding: 10px;
+        margin-left: -1px;
+        
+        
+      
+      
+     
+        
+
+        &:hover
+        {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        
+    }
+
+  
 
     
    
@@ -36,22 +76,68 @@ footer
 
     li {
 
+       
         border-left: 1px solid white;
         text-align: left;
+        padding: 5px;
         padding-left: 15px;
+        overflow: hidden;
+        
+
+      
 
         &:first-child{
     
             font-size: 1.5rem;
-            border-left: 4px solid red;
+            padding-bottom: 5px;
+
+            
+           
         
              }
+
+        &:hover
+        {
+            cursor: pointer;
+            opacity: .8;
+        }
+
+        &:nth-child(2)
+        {
+            margin-top: 10px;
+        }
+
+      
+                
+        
         
 
 
     }
 
+   
+
    }
 
 
+}
+
+#company
+{
+    border-left: 5px solid #00c2e9;
+}
+
+#knowledge
+{
+    border-left: 5px solid #109991;
+}
+
+#resources
+{
+    border-left: 5px solid #df5557;
+}
+
+#getInTouch
+{
+    border-left: 5px solid #9367a5;
 }
