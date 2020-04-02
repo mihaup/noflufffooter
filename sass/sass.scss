@@ -6,6 +6,8 @@ html,body
 }
 
 
+
+
 footer
 {
 
@@ -22,15 +24,18 @@ footer
     justify-content: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    overflow-y: scroll;
 
 
   
 
     h3 {
 
+        display: block;
         padding: 30px;
         padding-top: 5px;
-      
+        padding-right: 80px;
+        padding-left: 80px;
         transform: scale(1.2);
 
     }
@@ -141,3 +146,50 @@ footer
 {
     border-left: 5px solid #9367a5;
 }
+
+
+
+@media only screen and (max-width: 850px) {
+    footer {
+
+       h3
+       {
+         display: none;
+       }
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 750px) {
+    footer {
+      
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        align-content: center;
+       
+
+        h3 
+        {
+            display: block;
+        }
+
+        ul 
+        {
+
+            width: 75%;
+            margin: 0 auto;
+            padding: 20px;
+      
+            
+
+        
+        }
+      
+    }
+  }
+

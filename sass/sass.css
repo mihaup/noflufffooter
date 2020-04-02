@@ -21,11 +21,15 @@ footer {
           justify-content: center;
   padding-top: 50px;
   padding-bottom: 50px;
+  overflow-y: scroll;
 }
 
 footer h3 {
+  display: block;
   padding: 30px;
   padding-top: 5px;
+  padding-right: 80px;
+  padding-left: 80px;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -83,5 +87,35 @@ footer ul li:nth-child(2) {
 
 #getInTouch {
   border-left: 5px solid #9367a5;
+}
+
+@media only screen and (max-width: 850px) {
+  footer h3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  footer {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  footer h3 {
+    display: block;
+  }
+  footer ul {
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+  }
 }
 /*# sourceMappingURL=sass.css.map */
